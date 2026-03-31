@@ -127,7 +127,7 @@ public Session getAdminSession(String region, String zone, EndpointType endpoint
 
 * region(String): 访问的Cloudpods实例的region，一般为"region0"
 * zone(String): 访问的可用区，该参数可选。一般为null
-* endpointType(EndpointType): 访问服务端点的类型，可选值为：EndpointType.InternalURL和EndpointType.PublicURL。一般需要选择public。只有客户端在部署Cloudpods的Kubernetes集群里运行时，才可以使用internal。
+* endpointType(EndpointType): 访问服务端点的类型，可选值为：EndpointType.InternalURL和EndpointType.PublicURL, EndpointType.ApigatewayURL。一般需要选择public。只有客户端在部署Cloudpods的Kubernetes集群里运行时，才可以使用internal。
 
 #### 4) AuthAgent.verify
 
